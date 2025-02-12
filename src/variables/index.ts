@@ -1,2 +1,2 @@
-export const BASE_URL = 'http://localhost:1488';
+export const BASE_URL = 'http://localhost/api';
 export const PASSWORD = 'lolvasko96';
