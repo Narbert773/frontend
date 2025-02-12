@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Just+Another+Hand&family=Leckerli+One&family=Oleo+Script:wght@400;700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Just+Another+Hand&family=Leckerli+One&family=Oleo+Script:wght@400;700&family=Pacifico&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'Rubik', serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #121212 #121212;
+}
+
+html::-webkit-scrollbar {
+  width: 1px;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 1px;
+}
+
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.link {
+  text-decoration: none;
+  color: #121212;
+}
+
+.h3 {
+  margin-top: 150px;
+}
+
+.app.light {
+  background-color: #fdf4e3;
+  color: #1d1e33;
+}
+
+.app.dark {
+  background-color: #1d1e33;
+  color: #fdf4e3;
+}
+
+.app.light .v-list {
+  background-color: #fdf4e3;
+  color: #1d1e33;
+  transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
+}
+
+.app.dark .v-list {
+  background-color: #1d1e33;
+  color: #fdf4e3;
+  transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
+}
+
+.app.dark .secret-btn {
+  background-color: #1d1e33;
+  color: #fdf4e3;
+}
+
+.app.dark .form-border {
+  border: 5px solid #fdf4e3;
+}
+
+.app.light .form-border {
+  border: 5px solid rgb(6, 53, 85);
+}
+
+.app.dark .invite-btn {
+  background-color: #fdf4e3;
+  color: #1d1e33;
+}
+
+.app.light .toolbar {
+  background-color: #fdf4e3;
+  color: #121212;
+  transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
+}
+
+.app.dark .toolbar {
+  background-color: #1d1e33;
+  color: white;
+  transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
+}
+
+.app.light .link {
+  background-color: #fdf4e3;
+  color: #121212;
+  transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
+}
+
+.app.dark .link {
+  background-color: #1d1e33;
+  color: white;
+  transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
+}
+
+.app.light .divider {
+  background-color: #121212;
+  transition: color 0.4s ease-in-out, color 0.4s ease-in-out;
+}
+
+.app.dark .divider {
+  background-color: white;
+  transition: color 0.4s ease-in-out, color 0.4s ease-in-out;
+}
+
+.app.light .styled-table {
+  background: white;
+  color: #333;
+}
+
+.app.dark .styled-table {
+  background: #1e1e1e;
+  color: white;
+  border: 4px solid white;
+}
+
+.app.light .border {
+  border: 3px solid black !important;
+  padding: 5px;
+}
+
+.app.dark .border {
+  border: 3px solid white !important;
+  padding: 5px;
+}
+
+@media (max-width: 725px) {
+  .v-text-field input {
+    font-size: 14px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+}
+
+@media (max-width: 485px) {
+  .v-text-field input {
+    font-size: 12px;
+  }
+}
